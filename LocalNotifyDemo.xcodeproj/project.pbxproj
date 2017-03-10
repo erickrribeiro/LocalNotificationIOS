@@ -13,6 +13,7 @@
 		88CA28F71E7349BA0094CE84 /* LocalNotifyDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88CA28F51E7349BA0094CE84 /* LocalNotifyDemo.xcdatamodeld */; };
 		88CA28F91E7349BA0094CE84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CA28F81E7349BA0094CE84 /* Assets.xcassets */; };
 		88CA28FC1E7349BA0094CE84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CA28FA1E7349BA0094CE84 /* LaunchScreen.storyboard */; };
+		88CA29041E734ACA0094CE84 /* LocalNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CA29031E734ACA0094CE84 /* LocalNotificationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		88CA28F81E7349BA0094CE84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CA28FB1E7349BA0094CE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88CA28FD1E7349BA0094CE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88CA29031E734ACA0094CE84 /* LocalNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				88CA28EE1E7349BA0094CE84 /* AppDelegate.swift */,
+				88CA29031E734ACA0094CE84 /* LocalNotificationHelper.swift */,
 				88CA28F01E7349BA0094CE84 /* ViewController.swift */,
 				88CA28F21E7349BA0094CE84 /* Main.storyboard */,
 				88CA28F81E7349BA0094CE84 /* Assets.xcassets */,
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					88CA28EA1E7349BA0094CE84 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9C5DAS63M5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,6 +145,7 @@
 			files = (
 				88CA28F11E7349BA0094CE84 /* ViewController.swift in Sources */,
 				88CA28F71E7349BA0094CE84 /* LocalNotifyDemo.xcdatamodeld in Sources */,
+				88CA29041E734ACA0094CE84 /* LocalNotificationHelper.swift in Sources */,
 				88CA28EF1E7349BA0094CE84 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9C5DAS63M5;
 				INFOPLIST_FILE = LocalNotifyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eribeiro.LocalNotifyDemo;
@@ -276,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9C5DAS63M5;
 				INFOPLIST_FILE = LocalNotifyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eribeiro.LocalNotifyDemo;
