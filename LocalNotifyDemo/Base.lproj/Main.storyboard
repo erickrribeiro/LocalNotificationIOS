@@ -28,11 +28,20 @@
                                     <action selector="send10SecNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7N-vg-XHx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCC-dA-emr">
+                                <rect key="frame" x="79" y="356" width="216" height="30"/>
+                                <state key="normal" title="Send Notification with category"/>
+                                <connections>
+                                    <action selector="sendNotificationWithCategory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kya-zm-6hI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1PI-8q-zTH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2mc-E7-vnB"/>
                             <constraint firstItem="1PI-8q-zTH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3aU-ca-n52"/>
+                            <constraint firstItem="ZCC-dA-emr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="37.5" id="dLa-rC-Q1Z"/>
+                            <constraint firstItem="ZCC-dA-emr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pV8-WE-rrh"/>
                         </constraints>
                     </view>
                 </viewController>

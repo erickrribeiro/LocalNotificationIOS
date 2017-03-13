@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+    
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound])
+        { (granted, error) in
+            
+        }
         
-        application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
+        let answerOne = UNNotificationAction(identifier: "answerOne", title: "29", options: [.foreground])
+        let answertTwo = UNNotificationAction(identifier: "answerTwo", title: "55", options: [.foreground])
+        let clue = UNNotificationAction(identifier: "clue", title: "Get a value", options: [.foreground])
+        
+        let quizCategory = UNNotificationCategory(identifier: "quizCategory", actions: [answerOne, answertTwo, clue], intentIdentifiers: [], options: [])
+        UNUserNotificationCenter.current().setNotificationCategories([quizCategory])
+        
+        //application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
             
         return true
     }
